@@ -1,12 +1,9 @@
-class Rectangle
+require "./lib/shape"
 
-  # this class should have the following properties:
-  # - color
-  # - length
-  # - width
+class Rectangle < Shape
 
-  #It should have the following methods:
-  # - area (width * length)
-  # - perimeter (2 * (length + width))
+  def initialize(color, length, width)
+    super(color, length, width)
+  end
 
 end
